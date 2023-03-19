@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]">
+  <parameter name="url" value="https://login.salesforce.com/"/>
+  <test name="Test-chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.salesForceTestng.SalesForceTask2">
+        <methods>
+          <include name="salesForce2" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="setData"/>
+        </methods>
+      </class> <!-- org.salesForceTestng.SalesForceTask2 -->
+    </classes>
+  </test> <!-- Test-chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
